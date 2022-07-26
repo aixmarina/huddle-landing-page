@@ -14,6 +14,8 @@ body {
     background-image: url('/images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-color: $color-violeta;
+    background-image: cover;
+    background-size: 100%;
     margin: 2.3rem;
 }
 
@@ -61,7 +63,8 @@ main {
             padding: 0.7rem 0;
             font-family: 'Poppins', sans-serif;
             font-size: smaller;
-            width: 70%;
+            width: 100%;
+            max-width: 200px;
             box-shadow: 5px 5px 15px -10px black;
         }
     }
