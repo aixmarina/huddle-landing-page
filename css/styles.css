@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +9,65 @@ body {
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-color: hsl(257deg, 40%, 49%);
-  margin: 2rem;
+  margin: 2.3rem;
+}
+
+header img {
+  max-width: 42%;
+}
+
+main {
+  margin-top: 3.2rem;
+}
+main img {
+  max-width: 100%;
+}
+main .desc {
+  margin-top: 3.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+main .desc h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+}
+main .desc p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+}
+main .desc .btn-main {
+  margin-top: 0.5rem;
+  color: hsl(257deg, 40%, 49%);
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: smaller;
+  width: 70%;
+  box-shadow: 5px 5px 15px -10px black;
+}
+
+footer .media-container {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+footer .media-container i {
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 20px;
+}
+footer .media-container .media1 i {
+  padding: 0.4rem 0.6rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
