@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(257deg, 40%, 49%);
   background-image: cover;
-  background-size: 100%;
   margin: 2.3rem;
 }
 
@@ -20,11 +19,16 @@ header img {
 
 main {
   margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main img {
   max-width: 100%;
 }
 main .desc {
+  max-width: 507px;
   margin-top: 3.2rem;
   text-align: center;
   display: flex;
@@ -71,6 +75,56 @@ footer .media-container i {
 }
 footer .media-container .media1 i {
   padding: 0.4rem 0.6rem;
+}
+
+@media (max-width: 1170px) {
+  body {
+    background-size: 100%;
+  }
+}
+@media (max-width: 1169px) and (min-width: 690px) {
+  main .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .image img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1170px) {
+  body {
+    background-image: url("/images/bg-desktop.svg");
+    background-size: contain;
+  }
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 5.5rem;
+  }
+  main img {
+    max-width: 100%;
+  }
+  main .desc {
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+  main .desc h1 {
+    font-size: 2.25rem;
+  }
+  main .desc p {
+    font-size: 1rem;
+  }
+  main .desc .btn-main {
+    padding: 1rem 0;
+    max-width: 180px;
+    box-shadow: 5px 5px 15px -6px black;
+    font-size: medium;
+  }
+  footer .media-container {
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
