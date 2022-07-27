@@ -3,6 +3,7 @@
 
 // variables
 $color-violeta: hsl(257, 40%, 49%);
+$color-magenta: hsl(300, 69%, 71%);
 
 * {
     padding: 0;
@@ -18,10 +19,8 @@ body {
     margin: 2.3rem;
 }
 
-header {
-    img {
-        max-width: 42%;
-    }
+header img {
+    max-width: 42%;
 }
 
 main {
@@ -69,33 +68,42 @@ main {
             width: 100%;
             max-width: 200px;
             box-shadow: 5px 5px 15px -10px black;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-magenta;
+                color: white;
+            }
         }
     }
 }
 
-footer {
-    .media-container {
-        margin-top: 3.5rem;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        color: white;
+footer .media-container {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
 
-        i {
-            border: 1px solid white;
-            padding: 0.4rem;
-            border-radius: 20px;
+    i {
+        cursor: pointer;
+        border: 1px solid white;
+        padding: 0.4rem;
+        border-radius: 20px;
+
+        &:hover {
+            border-color: $color-magenta;
+            color: $color-magenta;
         }
-
-        .media1 {
-            i {
-                padding: 0.4rem 0.6rem;
-            }
-        }
-
-
     }
 
+    .media1 i {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .media3 i {
+        padding: 0.4rem 0.5rem;
+    }
 }
 
 @media (max-width: 1170px) {
@@ -106,26 +114,22 @@ footer {
 }
 
 @media (max-width: 1169px) and (min-width: 690px) {
-    main {
-        .image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    main .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            img {
-                max-width: 70%;
-            }
+        img {
+            max-width: 70%;
         }
-
     }
 }
 
-@media (max-width: 1440px) and (min-width: 1170px) {
+@media (min-width: 1170px) {
 
     body {
         background-image: url("/images/bg-desktop.svg");
         background-size: contain;
-
     }
 
     main {
@@ -158,13 +162,10 @@ footer {
             }
         }
 
-
     }
 
-    footer {
-        .media-container {
-            justify-content: flex-end;
-        }
+    footer .media-container {
+        justify-content: flex-end;
     }
 
 }

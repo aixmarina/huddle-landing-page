@@ -59,6 +59,11 @@ main .desc .btn-main {
   width: 100%;
   max-width: 200px;
   box-shadow: 5px 5px 15px -10px black;
+  cursor: pointer;
+}
+main .desc .btn-main:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
 }
 
 footer .media-container {
@@ -69,12 +74,20 @@ footer .media-container {
   color: white;
 }
 footer .media-container i {
+  cursor: pointer;
   border: 1px solid white;
   padding: 0.4rem;
   border-radius: 20px;
 }
+footer .media-container i:hover {
+  border-color: hsl(300deg, 69%, 71%);
+  color: hsl(300deg, 69%, 71%);
+}
 footer .media-container .media1 i {
   padding: 0.4rem 0.6rem;
+}
+footer .media-container .media3 i {
+  padding: 0.4rem 0.5rem;
 }
 
 @media (max-width: 1170px) {
@@ -92,7 +105,7 @@ footer .media-container .media1 i {
     max-width: 70%;
   }
 }
-@media (max-width: 1440px) and (min-width: 1170px) {
+@media (min-width: 1170px) {
   body {
     background-image: url("/images/bg-desktop.svg");
     background-size: contain;
